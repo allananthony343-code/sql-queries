@@ -72,7 +72,7 @@ df_hungry =  pd.read_sql("""
     SELECT name, age, breed
     FROM dogs
     WHERE hungry = 1
-    ORDER BY age ASC
+    ORDER BY age ASC;
 """, conn2)
 
 # CodeGrade step7
