@@ -110,8 +110,7 @@ SELECT * FROM babe_ruth_stats; """, conn3)
 # Replace None with your code
 df_ruth_years = pd.read_sql("""
     SELECT COUNT(year) AS total_number_of_years
-    FROM babe_ruth_stats
-    GROUP BY year;
+    FROM babe_ruth_stats;
 """, conn3)
 
 # CodeGrade step10
