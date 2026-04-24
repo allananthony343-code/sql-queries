@@ -80,9 +80,11 @@ FROM dogs
 df_hungry_ages =pd.read_sql("""
     SELECT name, age, hungry
     FROM dogs
-    WHERE age BETWEEN 2 AND 7
-    ORDER BY name ASC
+    WHERE hungry = 1 AND age BETWEEN 2 AND 7
+    AND hungry = 1
+    ORDER BY name ASC;
 """, conn2)
+
 
 # CodeGrade step8
 # Replace None with your code
